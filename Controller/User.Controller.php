@@ -3,34 +3,31 @@
     {
 	   public function ValidarUsuario()
        {
-            $smarty=new Smarty();
-			$user=new Usuarios();
+            $us=new Usuarios();
+			$smarty=new Smarty();
 			$lib=new Librerias();
-        
-            
-            $nombre=$_POST['usuario'];
+
+			$u=$_POST['usuario'];
 			$pass=$_POST['pass'];
 
-			$dato=$user->BuscarUsuario($nombre, $pass);
+			$dato=$us->BuscarUsuario($u,$pass);
 			$d=$lib->DatosRow($dato);
-			//var_dump($dato);
 
 			if($dato->num_rows==1)
 			{
 				session_start();
-				$_SESSION['user']=$nombre;
+				$_SESSION['user']=$u;
 				$_SESSION['vista']="null";
 				
 				$smarty->assign('e','null');
 				$smarty->assign('vista',$_SESSION['vista']);
 				$smarty->assign('usuario',$_SESSION['user']);
 				$smarty->display('Master.tpl');
-
 			}
-			else 
+			else
 			{
 				$smarty->display('Master.tpl');
-			}
+			} 
 		}
 
 		public function GuardarUsuario()
@@ -46,7 +43,7 @@
 			$usuario=$_POST['Usuario'];
 			$pass=$_POST['Password'];
 
-			$transaccion=$guardar->AgregarUsuario($nombre,$apellido,$genero,$fechanac,$usuario,$pass);
+			$transaccion=$guardar->AgregarUsuario($u, $nombre,$apellido,$genero,$fechanac,$usuario,$pass);
 
 			if($transaccion)
 			{

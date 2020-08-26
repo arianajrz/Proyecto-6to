@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Librerias"
+    "\\Librerias",
+    "\\Model",
+    "\\templates"
   ],
-  "SelectedNode": "\\Librerias",
+  "SelectedNode": "\\templates",
   "PreviewInSolutionExplorer": false
 }

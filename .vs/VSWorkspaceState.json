@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Librerias",
     "\\Model",
     "\\templates"
   ],
-  "SelectedNode": "\\templates",
+  "SelectedNode": "\\Controller",
   "PreviewInSolutionExplorer": false
 }

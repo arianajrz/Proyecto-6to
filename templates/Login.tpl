@@ -74,7 +74,7 @@
     <div class="container">
       <div class="row login">
            <div class=" "col s12 l4 offset-l4">
-            <form method="post" action="?controlador=usuario&metodo=ValidarUsuario">
+            <form method="post" action="?controller=User&action=ValidarUsuario">
            
              <img class="omg" src="Recursos/Img/logo.png">
             <h1> Inicio de Sesión </h1>

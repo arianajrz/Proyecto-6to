@@ -1,7 +1,7 @@
 <?php
 	Class User
     {
-	   public function ValidarUsuario()
+	    public function ValidarUsuario()
        {
             $us=new Usuarios();
 			$smarty=new Smarty();
@@ -17,6 +17,7 @@
 			{
 				session_start();
 				$_SESSION['user']=$u;
+				$_SESSION['tipo']=$tipo;
 				$_SESSION['vista']="null";
 				
 				$smarty->assign('e','null');

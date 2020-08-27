@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-27 01:13:44
+/* Smarty version 3.1.34-dev-7, created on 2020-08-27 18:41:52
   from 'C:\xampp\htdocs\bim4\Proyecto-6to\templates\Login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f46eca83cb506_07650185',
+  'unifunc' => 'content_5f47e250738170_10161730',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '421330b5ab5c908c07dfe246232f31ab948a94f5' => 
     array (
       0 => 'C:\\xampp\\htdocs\\bim4\\Proyecto-6to\\templates\\Login.tpl',
-      1 => 1598483527,
+      1 => 1598546507,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f46eca83cb506_07650185 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f47e250738170_10161730 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
 >
     $(document).ready(function() {
@@ -99,7 +99,7 @@ echo '<script'; ?>
     <div class="container">
       <div class="row login">
            <div class=" "col s12 l4 offset-l4">
-            <form method="post" action="?controlador=usuario&metodo=ValidarUsuario">
+            <form method="post" action="?controller=User&action=ValidarUsuario">
            
              <img class="omg" src="Recursos/Img/logo.png">
             <h1> Inicio de Sesión </h1>

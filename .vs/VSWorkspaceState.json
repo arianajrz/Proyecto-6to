@@ -3,10 +3,11 @@
     "",
     "\\Controller",
     "\\Framework",
+    "\\Librerias",
     "\\Model",
     "\\templates",
     "\\templates\\Cabeceras"
   ],
-  "SelectedNode": "\\templates\\Menu.tpl",
+  "SelectedNode": "\\templates\\Login.tpl",
   "PreviewInSolutionExplorer": false
 }

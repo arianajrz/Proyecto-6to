@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Controller",
+    "\\Framework",
     "\\Model",
-    "\\templates"
+    "\\templates",
+    "\\templates\\Cabeceras"
   ],
-  "SelectedNode": "\\Model\\Conexion.Class.php",
+  "SelectedNode": "\\templates\\Menu.tpl",
   "PreviewInSolutionExplorer": false
 }

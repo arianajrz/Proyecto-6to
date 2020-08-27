@@ -1,5 +1,5 @@
 <?php
-	class User
+	Class User
     {
 	   public function ValidarUsuario()
        {
@@ -36,14 +36,14 @@
 			$smarty=new Smarty();
 			session_start();
 
-			$nombre=$_POST['Nombre'];
-			$apellido=$_POST['Apellido'];
-			$genero=$_POST['Genero'];
-			$fechanac=$_POST['Fechanac'];
-			$usuario=$_POST['Usuario'];
-			$pass=$_POST['Password'];
+			$nombre=$_POST['nombre'];
+			$apellido=$_POST['apellido'];
+			$genero=$_POST['genero'];
+			$fechanac=$_POST['fecha'];
+			$u=$_POST['usuario'];
+			$pass=$_POST['pass'];
 
-			$transaccion=$guardar->AgregarUsuario($u, $nombre,$apellido,$genero,$fechanac,$usuario,$pass);
+			$transaccion=$guardar->AgregarUsuario($nombre,$apellido,$genero,$fechanac,$u,$pass);
 
 			if($transaccion)
 			{

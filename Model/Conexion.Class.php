@@ -1,9 +1,7 @@
 <?php
-     class Conexion extends mysqli
-     {
-	   public function __construct()
-       {
-            function __construct()
+	class Conexion extends mysqli
+	{
+		function __construct()
 		{
 			$server="localhost";
 			$pass="";
@@ -17,6 +15,8 @@
 			echo $error;
 			unset ($error);
 
-       }
-     }
+
+
+		}
+	}
 ?>

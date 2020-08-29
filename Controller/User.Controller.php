@@ -17,7 +17,6 @@
 			{
 				session_start();
 				$_SESSION['user']=$u;
-				$_SESSION['tipo']=$tipo;
 				$_SESSION['vista']="null";
 				
 				$smarty->assign('e','null');

@@ -18,13 +18,13 @@
 			$resultado=$gl->AgregarLibro($nombre,$materia,$grado,$autor,$editorial,$precio,$cant);
 			if ($resultado)
             {
-                $m= "El libro ".$nombre." se ha guardado";
+                $men= "El libro ".$nombre." se ha guardado";
             }
             else
             {
-                $m= "El libro ".$nombre." no se ha logrado guardar";
+                $men= "El libro ".$nombre." no se ha logrado guardar";
             }
-            $smarty->assign('m',$m);
+            $smarty->assign('men',$men);
             $smarty->assign('e','null');
             $smarty->assign('vista',$_SESSION['vista']);
             $smarty->assign('usuario',$_SESSION['u']);

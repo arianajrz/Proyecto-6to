@@ -19,5 +19,14 @@
 			$usuario->close();
 			return $consulta;
 		}
+		
+		public function VerUsuarios ()
+		{
+			$con=new Conexion();
+			$query="SELECT * FROM `usuarios` WHERE 1";
+			$consulta=$con->query($query);
+			$con->close();
+			return $consulta;
+		}
 	}
 ?>

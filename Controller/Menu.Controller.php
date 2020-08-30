@@ -30,6 +30,22 @@
 				$dato=$lib->DatosSmarty($invent);
 				$smarty->assign('dato',$dato);
 			}
+			else if($_SESSION['opcion']=='BuscarLibros')
+			{
+				$inv=new Inventario();
+				$lib=new Librerias(); 
+				$invent=$inv->VerUnifomes();
+				$dato=$lib->DatosSmarty($invent);
+				$smarty->assign('dato',$dato);
+			}
+			else if($_SESSION['opcion']=='BuscarUniformes')
+			{
+				$inv=new Inventario();
+				$lib=new Librerias(); 
+				$invent=$inv->VerUnifomes();
+				$dato=$lib->DatosSmarty($invent);
+				$smarty->assign('dato',$dato);
+			}
 			$smarty->assign('e','null');
             		$smarty->assign('vista',$_SESSION['opcion']);
             		$smarty->assign('usuario',$_SESSION['user']);

@@ -5,9 +5,11 @@
     "\\Framework",
     "\\Librerias",
     "\\Model",
+    "\\Recursos",
     "\\templates",
-    "\\templates\\Cabeceras"
+    "\\templates\\Cabeceras",
+    "\\templates_c"
   ],
-  "SelectedNode": "\\templates\\Login.tpl",
+  "SelectedNode": "\\Recursos",
   "PreviewInSolutionExplorer": false
 }

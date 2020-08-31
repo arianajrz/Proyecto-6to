@@ -50,7 +50,7 @@
 		return $resultado;
 	    }
 
-	      public function AgregarUsuario($prenda, $talla, $precio, $cantidad)
+	      public function AgregarUniforme($prenda, $talla, $precio, $cantidad)
 	      {
 
 		$uniforme = new Conexion();

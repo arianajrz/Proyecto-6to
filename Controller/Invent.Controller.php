@@ -62,20 +62,20 @@
 		}
 		public function GuardarUniformes()
 		{
-			$smarty->assign('men',$men);
+			/*$smarty->assign('men',$men);
 			$smarty->assign('e','null');
 			$smarty->assign('vista',$_SESSION['vista']);
 			$smarty->assign('usuario',$_SESSION['u']);
-			$smarty->display('Master.tpl'); 
+			$smarty->display('Master.tpl'); */
 		}
 		
 	   	public function QuitarUniformes()
 	    	{
-			$smarty->assign('men',$men);
+			/*$smarty->assign('men',$men);
 			$smarty->assign('e','null');
 			$smarty->assign('vista',$_SESSION['vista']);
 			$smarty->assign('usuario',$_SESSION['u']);
-			$smarty->display('Master.tpl'); 
+			$smarty->display('Master.tpl');*/ 
 		}
 	}
 ?>

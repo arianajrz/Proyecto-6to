@@ -7,7 +7,14 @@
             <div class="row">
             <div class="col s12">
             {include file = "Menu.tpl"}
-            
+            </div>
+            <div class="col s8">
+
+				{if $vista=="GuardarUsuario"}
+					{include file='CrearUsuario.tpl'}
+
+					{else if $vista == "MostrarP"}
+                     {include file='VerUs.tpl'}
                    
               
                 

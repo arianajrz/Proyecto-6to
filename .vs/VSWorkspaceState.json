@@ -5,10 +5,7 @@
     "\\Framework",
     "\\Librerias",
     "\\Model",
-    "\\Recursos",
-    "\\templates",
-    "\\templates\\Cabeceras",
-    "\\templates_c"
+    "\\templates"
   ],
   "SelectedNode": "\\Recursos",
   "PreviewInSolutionExplorer": false

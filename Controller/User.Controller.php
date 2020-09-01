@@ -42,6 +42,7 @@
 			$fechanac=$_POST['fecha'];
 			$u=$_POST['usuario'];
 			$pass=$_POST['pass'];
+			$repass=$_POST['RePass'];
 
 			$transaccion=$guardar->AgregarUsuario($nombre,$apellido,$genero,$fechanac,$u,$pass);
 

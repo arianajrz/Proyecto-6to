@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="collection">
-		 <a href="?controller=User&action=CargarOpcion&opcion=GuardarUsuario" class="collection-item black-text"><b>Crear Usuario</b></a>
+		 <a href="?controller=Menu&action=CargarOpcion&opcion=CrearUsuario" class="collection-item black-text"><b>Crear Usuario</b></a>
 
 		 <a href="?controller=Menu&action=CargarOpcion&opcion=VerUsuarios" class="collection-item black-text"><b>Ver Usuarios</b></a>
 

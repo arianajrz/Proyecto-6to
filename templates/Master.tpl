@@ -10,7 +10,7 @@
             </div>
             <div class="col s8">
 
-				{if $vista=="GuardarUsuario"}
+				{if $vista=="CrearUsuario"}
 					{include file='CrearUsuario.tpl'}
 
 					{else if $vista == "VerUsuarios"}

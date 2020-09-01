@@ -1,12 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Controller",
-    "\\Framework",
-    "\\Librerias",
-    "\\Model",
-    "\\templates"
+    ""
   ],
-  "SelectedNode": "\\Recursos",
+  "SelectedNode": "\\Controller",
   "PreviewInSolutionExplorer": false
 }

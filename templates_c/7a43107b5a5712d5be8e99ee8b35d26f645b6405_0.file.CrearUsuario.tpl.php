@@ -1,8 +1,32 @@
-script>
+<?php
+/* Smarty version 3.1.34-dev-7, created on 2020-09-02 01:10:13
+  from 'C:\xampp\htdocs\bim4\Proyecto-6to\templates\CrearUsuario.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.34-dev-7',
+  'unifunc' => 'content_5f4ed4d5962238_28929119',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '7a43107b5a5712d5be8e99ee8b35d26f645b6405' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\bim4\\Proyecto-6to\\templates\\CrearUsuario.tpl',
+      1 => 1599001785,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5f4ed4d5962238_28929119 (Smarty_Internal_Template $_smarty_tpl) {
+?>script>
     $(document).ready(function() {
 		$('select').material_select();
     });
-</script>
+<?php echo '</script'; ?>
+>
 
 	<div class="row">
 	  <div class="col s11  cyan darken-3">
@@ -86,4 +110,5 @@ script>
 		</div>
 
 
-	</form>
+	</form><?php }
+}

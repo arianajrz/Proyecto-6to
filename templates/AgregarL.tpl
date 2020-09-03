@@ -13,7 +13,7 @@
 	  </div>
 	</div>
 
-	<form class = "col s12 center-align" method="post" action="?controller=User&action=AgregarLibros">
+	<form class = "col s12 center-align" method="post" action="?controller=Inver&action=GuardarLibro">
 		<div class = "row">
 			<div class = "input-field col s12">
 				

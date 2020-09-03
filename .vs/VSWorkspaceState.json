@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Controller",
+    "\\Framework",
+    "\\Librerias",
+    "\\Model",
+    "\\Recursos",
+    "\\templates",
+    "\\templates\\Cabeceras"
   ],
-  "SelectedNode": "\\Controller",
+  "SelectedNode": "\\Librerias\\Librerias.lib.php",
   "PreviewInSolutionExplorer": false
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-09-02 00:54:53
+/* Smarty version 3.1.34-dev-7, created on 2020-09-03 02:31:07
   from 'C:\xampp\htdocs\bim4\Proyecto-6to\templates\Master.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4ed13d72bd78_45407593',
+  'unifunc' => 'content_5f50394b45b651_25403687',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '153486b060a12b3d967d90ec83b557d7976978fc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\bim4\\Proyecto-6to\\templates\\Master.tpl',
-      1 => 1599000828,
+      1 => 1599092774,
       2 => 'file',
     ),
   ),
@@ -22,10 +22,16 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:Menu.tpl' => 1,
     'file:CrearUsuario.tpl' => 1,
     'file:VerUs.tpl' => 1,
+    'file:AgregarL.tpl' => 1,
+    'file:InventarioL' => 1,
+    'file:QuitarL' => 1,
+    'file:InventarioU.tpl' => 1,
+    'file:AgregarU.tpl' => 1,
+    'file:QuitarU.tpl' => 1,
     'file:Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f4ed13d72bd78_45407593 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f50394b45b651_25403687 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:Cabeceras/Header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('titulo'=>'Home'), 0, false);
 ?>
     <?php if (isset($_smarty_tpl->tpl_vars['e']->value)) {?>
@@ -49,20 +55,28 @@ $_smarty_tpl->_subTemplateRender('file:Cabeceras/Header.tpl', $_smarty_tpl->cach
                      <?php $_smarty_tpl->_subTemplateRender('file:VerUs.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
-				<?php } elseif ($_smarty_tpl->tpl_vars['vista']->value == '') {?>
-					<?php $_smarty_tpl->_subTemplateRender('', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
+				<?php } elseif ($_smarty_tpl->tpl_vars['vista']->value == "AgregarLibro") {?>
+					<?php $_smarty_tpl->_subTemplateRender('file:AgregarL.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
-					<?php } elseif ($_smarty_tpl->tpl_vars['vista']->value == "CrearProducto") {?>
-					<?php $_smarty_tpl->_subTemplateRender('', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
+					<?php } elseif ($_smarty_tpl->tpl_vars['vista']->value == "VerLibros") {?>
+					<?php $_smarty_tpl->_subTemplateRender('file:InventarioL', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
-					<?php } elseif ($_smarty_tpl->tpl_vars['vista']->value == '') {?>
-					<?php $_smarty_tpl->_subTemplateRender('', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
+					<?php } elseif ($_smarty_tpl->tpl_vars['vista']->value == "RetirarLibro") {?>
+					<?php $_smarty_tpl->_subTemplateRender('file:QuitarL', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
-					<?php } elseif ($_smarty_tpl->tpl_vars['vista']->value == '') {?>
-                    <?php $_smarty_tpl->_subTemplateRender('', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
+					<?php } elseif ($_smarty_tpl->tpl_vars['vista']->value == "VerUniformes") {?>
+                    <?php $_smarty_tpl->_subTemplateRender('file:InventarioU.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+
+                    <?php } elseif ($_smarty_tpl->tpl_vars['vista']->value == "AgregarUniforme") {?>
+                    <?php $_smarty_tpl->_subTemplateRender('file:AgregarU.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+
+                    <?php } elseif ($_smarty_tpl->tpl_vars['vista']->value == "RetirarUniforme") {?>
+                    <?php $_smarty_tpl->_subTemplateRender('file:QuitarU.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
 					

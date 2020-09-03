@@ -10,7 +10,7 @@
             </div>
             <div class="col s8">
 
-				{if $vista=="GuardarUsuario"}
+				{if $vista=="CrearUsuario"}
 					{include file='CrearUsuario.tpl'}
 
 					{else if $vista == "VerUsuarios"}
@@ -25,14 +25,14 @@
 					{else if $vista == "RetirarLibro"}
 					{include file='QuitarL'}
 
-					{else if $vista == "VerUniforme"}
-                    {include file='InventarioU'}
+					{else if $vista == "VerUniformes"}
+                    {include file='InventarioU.tpl'}
 
                     {else if $vista == "AgregarUniforme"}
-                    {include file='AgregarU'}
+                    {include file='AgregarU.tpl'}
 
                     {else if $vista == "RetirarUniforme"}
-                    {include file='QuitarU'}
+                    {include file='QuitarU.tpl'}
 
 					
 					{else if $vista == ""}

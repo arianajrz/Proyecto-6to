@@ -36,7 +36,7 @@
 	    public function VerUniformes ()
 	    {
 	      $con=new Conexion();
-	      $query="SELECT * FROM `uniformes` WHERE 1";
+	      $query="SELECT * FROM `uniformes` WHERE 1;";
 	      $consulta=$con->query($query);
 	      $con->close();
 	      return $consulta;
@@ -44,31 +44,34 @@
 
 	    public function BuscarUniforme($prenda, $talla, $precio, $cantidad)
 	    {
-		$uniforme=new Conexion();
-		$q="SELECT * FROM `uniformes` WHERE `Prenda`='$prenda' AND `Talla`='$talla' AND 'Precio'='$precio' AND 'Cantidad'='$cantidad';";
-		$resultado=$uniforme->query($q);
-		return $resultado;
+		$usuario=new Conexion();
+		$query="SELECT * FROM `uniformes` WHERE `Prenda`='$prenda' AND `Talla`='$talla' AND `Precio`='$precio' AND `Cantidad`='$cantidad';";
+		$consulta=$usuario->query($query);
+		$usuario->close();
+		return $consulta;
+
 	    }
 
-	      public function AgregarUniforme($prenda, $talla, $precio, $cantidad)
-	      {
+	    public function AgregarUniforme($prenda, $talla, $precio, $cantidad)
+	    {
 
-		$uniforme = new Conexion();
+		$usuario = new Conexion();
 		$query="INSERT INTO `uniformes`(`Prenda`, `Talla`, `Precio`, `Cantidad`) VALUES ('$prenda','$talla', '$precio', '$cantidad');";
-		$consulta=$uniforme->query($query);
-		$uniforme->close();
+		$consulta=$usuario->query($query);
+		$usuario->close();
 		return $consulta;
-	      }
 
-	      public function RetirarUniforme($prenda, $talla, $precio, $cantidad)
-	      {
-		$uniforme=new Conexion();
+	    }
+
+	    public function RetirarUniforme($prenda, $talla, $precio, $cantidad)
+	    {
+		$usuario=new Conexion();
 		$query="DELETE FROM `uniformes` WHERE `Prenda`='$prenda' AND `Talla`='$talla' AND 'Precio'='$precio' AND 'Cantidad'='$cantidad';";
 
-		$consulta=$uniforme->query($query);
-		$uniforme->close();
+		$consulta=$usuario->query($query);
+		$usuario->close();
 		return $consulta;
-	      }
+	    }
 	}
 
 ?>

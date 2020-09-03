@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-09-01 19:46:47
+/* Smarty version 3.1.34-dev-7, created on 2020-09-03 02:14:06
   from 'C:\xampp\htdocs\bim4\Proyecto-6to\templates\VerUs.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4e89076ead92_50062977',
+  'unifunc' => 'content_5f50354e9486d1_74638793',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '17f69acdd68681111042dd437dd165e4cee8aab5' => 
     array (
       0 => 'C:\\xampp\\htdocs\\bim4\\Proyecto-6to\\templates\\VerUs.tpl',
-      1 => 1598979994,
+      1 => 1599091977,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4e89076ead92_50062977 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f50354e9486d1_74638793 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
 >
     $(document).ready(function() {
@@ -59,7 +59,6 @@ echo '<script'; ?>
                   <th><font color="Black"><b>Contraseña</b></font></th>
               </tr>
             </thead>
-
 
             <tbody>
                 <?php

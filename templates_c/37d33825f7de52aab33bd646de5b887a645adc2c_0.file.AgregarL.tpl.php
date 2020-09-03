@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-09-03 03:16:33
+/* Smarty version 3.1.34-dev-7, created on 2020-09-03 05:09:02
   from 'C:\xampp\htdocs\bim4\Proyecto-6to\templates\AgregarL.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f5043f114f2f8_83832681',
+  'unifunc' => 'content_5f505e4e78abd9_12343671',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '37d33825f7de52aab33bd646de5b887a645adc2c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\bim4\\Proyecto-6to\\templates\\AgregarL.tpl',
-      1 => 1599095543,
+      1 => 1599102515,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f5043f114f2f8_83832681 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f505e4e78abd9_12343671 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
 >
     $(document).ready(function() {
@@ -38,7 +38,7 @@ echo '<script'; ?>
 	  </div>
 	</div>
 
-	<form class = "col s12 center-align" method="post" action="?controller=User&action=AgregarLibros">
+	<form class = "col s12 center-align" method="post" action="?controller=Invent&action=GuardarLibro">
 		<div class = "row">
 			<div class = "input-field col s12">
 				
@@ -95,5 +95,6 @@ echo '<script'; ?>
 			<input type="submit" value="Guardar" class="btn col s12 cyan darken-2">
 		  </div>
 		</div>
-	</form><?php }
+	</form>
+<?php }
 }

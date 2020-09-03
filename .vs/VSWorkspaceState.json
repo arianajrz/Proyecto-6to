@@ -6,9 +6,8 @@
     "\\Librerias",
     "\\Model",
     "\\Recursos",
-    "\\templates",
-    "\\templates\\Cabeceras"
+    "\\templates"
   ],
-  "SelectedNode": "\\Librerias\\Librerias.lib.php",
+  "SelectedNode": "\\Controller\\Invent.Controller.php",
   "PreviewInSolutionExplorer": false
 }

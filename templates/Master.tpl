@@ -28,7 +28,7 @@
 					{else if $vista == "VerUniformes"}
                     {include file='InventarioU.tpl'}
 
-                    {else if $vista == "AgregarUniforme"}
+                    {else if $vista == "AgregarUniformes"}
                     {include file='AgregarU.tpl'}
 
                     {else if $vista == "RetirarUniforme"}

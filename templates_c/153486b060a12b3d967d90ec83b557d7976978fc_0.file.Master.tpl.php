@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-09-03 02:31:07
+/* Smarty version 3.1.34-dev-7, created on 2020-09-03 02:43:08
   from 'C:\xampp\htdocs\bim4\Proyecto-6to\templates\Master.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f50394b45b651_25403687',
+  'unifunc' => 'content_5f503c1ca2faf8_64472632',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '153486b060a12b3d967d90ec83b557d7976978fc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\bim4\\Proyecto-6to\\templates\\Master.tpl',
-      1 => 1599092774,
+      1 => 1599093783,
       2 => 'file',
     ),
   ),
@@ -31,7 +31,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f50394b45b651_25403687 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f503c1ca2faf8_64472632 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:Cabeceras/Header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('titulo'=>'Home'), 0, false);
 ?>
     <?php if (isset($_smarty_tpl->tpl_vars['e']->value)) {?>
@@ -71,7 +71,7 @@ $_smarty_tpl->_subTemplateRender('file:Cabeceras/Header.tpl', $_smarty_tpl->cach
                     <?php $_smarty_tpl->_subTemplateRender('file:InventarioU.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
-                    <?php } elseif ($_smarty_tpl->tpl_vars['vista']->value == "AgregarUniforme") {?>
+                    <?php } elseif ($_smarty_tpl->tpl_vars['vista']->value == "AgregarUniformes") {?>
                     <?php $_smarty_tpl->_subTemplateRender('file:AgregarU.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 

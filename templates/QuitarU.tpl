@@ -9,12 +9,12 @@
 	<div class="row">
 	  <div class="col s11  cyan darken-3">
 	  	<font color="White" face="Impact">
-		<h5 class="center-align">Agregar Uniforme</h5>
+		<h5 class="center-align">Quitar Uniforme</h5>
 		</font>
 	  </div>
 	</div>
 
-	<form class = "col s12 center-align" method="post" action="?controller=Inventario&action=RetirarUniforme">
+	<form class = "col s12 center-align" method="post" action="?controller=User&action=RetirarUniforme">
 		<div class = "row">
 			<div class = "input-field col s10">
 				<input placeholder = "Prenda" name="prenda"  id = "nombre" type = "text" class = "active validate" required />

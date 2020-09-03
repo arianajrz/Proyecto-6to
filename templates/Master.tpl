@@ -16,7 +16,7 @@
 					{else if $vista == "VerUsuarios"}
                      {include file='VerUs.tpl'}
 
-				{else if $vista == "AgregarLibro"}
+				{else if $vista == "AgregarLibros"}
 					{include file='AgregarL.tpl'}
 
 					{else if $vista == "VerLibros"}

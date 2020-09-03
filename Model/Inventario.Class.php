@@ -5,11 +5,11 @@
 		public function AgregarLibro ($nombre, $materia, $grado, $autor, $editorial, $precio, $cantidad)
 		{
 
-			$libros=new Conexion();
+			$usuario=new Conexion();
 			$query="INSERT INTO `libros`(`Nombre`,`Materia`,`Grado`, `Autor`,`Editorial`,`Precio`, `Cantidad`) VALUES ('$nombre, $materia, $grado, $autor, $editorial, $precio, $cantidad');";
 
-			$consulta=$libros->query($query);
-			$libros->close();
+			$consulta=$usuario->query($query);
+			$usuario->close();
 			return $consulta;
 		}
 
@@ -25,7 +25,7 @@
 	    public function RetirarLibro($nombre, $materia, $grado, $autor, $editorial, $precio, $cantidad)
 	    {
 	      $libros=new Conexion();
-	      $query="DELETE FROM `libros` WHERE 'Nombre'='$nombre' AND 'Materia'='$materia' AND 'Grado'='$grado' AND 'Autor'='$autor' AND 'Editorial'='$editorial' AND 'Precio'='$precio' AND 'Cantidad'='$cantidad';";
+	      $query="DELETE FROM `libros` WHERE 'Nombre'='$nombre' AND 'Materia'='$materia' AND 'Grado'='$grado' AND 'Autor'='$autor' AND 'Editorial'='$editorial' AND 'Precio'='$precio' AND 'Cantidad'='$cantidad');";
 
 	      $consulta=$libros->query($query);
 	      $libros->close();

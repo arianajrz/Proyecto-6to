@@ -3,7 +3,7 @@
 	{
 		public function GuardarLibro()
 		{
-			$gl=new Inventario();
+			$guardar=new Inventario();
 			$smarty=new Smarty();
 			session_start();
 			
@@ -13,10 +13,10 @@
       		$autor=$_POST['autor'];
 			$editorial=$_POST['editorial'];
 			$precio=$_POST['precio'];
-      			$cant=$_POST['cant'];
+      		$cantidad=$_POST['cantidad'];
 
-			$resultado=$gl->AgregarLibro($nombre,$materia,$grado,$autor,$editorial,$precio,$cant);
-			if ($resultado)
+			$transaccion=$guardar->AgregarLibro($nombre,$materia,$grado,$autor,$editorial,$precio,$cantidad);
+			if ($transaccion)
 			{
 				$men= "El libro ".$nombre." se ha guardado";
 			}
@@ -26,7 +26,7 @@
 			}
 			$smarty->assign('men',$men);
 			$smarty->assign('e','null');
-			$smarty->assign('vista',$_SESSION['vista']);
+			$smarty->assign('vista',$_SESSION['AgregarL']);
 			$smarty->assign('usuario',$_SESSION['u']);
 			$smarty->display('Master.tpl'); 
 		}

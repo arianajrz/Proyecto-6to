@@ -73,7 +73,7 @@
 
 			//var_dump($_POST);
 
-			$transaccion=$guardar->AgregarUniformes($prenda,$talla,$precio,$cantidad);
+			$transaccion=$guardar->AgregarUniforme($prenda,$talla,$precio,$cantidad);
 
 			if($transaccion)
 			{
@@ -86,7 +86,7 @@
 			
 			$smarty->assign('men',$men);
 			$smarty->assign('e','null');
-			$smarty->assign('vista','AgregarU');
+			$smarty->assign('vista','vista');
 			$smarty->assign('usuario',$_SESSION['user']);
 			$smarty->display('Master.tpl');
 		}

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-09-03 03:00:24
+/* Smarty version 3.1.34-dev-7, created on 2020-09-03 06:42:41
   from 'C:\xampp\htdocs\bim4\Proyecto-6to\templates\AgregarU.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f5040287dcf98_26973678',
+  'unifunc' => 'content_5f507441c00372_46663622',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '086841e3e1fc5942cfeb2a0801569c125c058464' => 
     array (
       0 => 'C:\\xampp\\htdocs\\bim4\\Proyecto-6to\\templates\\AgregarU.tpl',
-      1 => 1599094803,
+      1 => 1599108156,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f5040287dcf98_26973678 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f507441c00372_46663622 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
 >
     $(document).ready(function() {
@@ -39,7 +39,7 @@ echo '<script'; ?>
 	  </div>
 	</div>
 
-	<form class = "col s12 center-align" method="post" action="?controller=User&action=AgregarUniformes">
+	<form class = "col s12 center-align" method="post" action="?controller=User&action=GuardarUniformes">
 		<div class = "row">
 			<div class = "input-field col s10">
 				<input placeholder = "Prenda" name="prenda"  id = "nombre" type = "text" class = "active validate" required />

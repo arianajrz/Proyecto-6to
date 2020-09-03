@@ -6,7 +6,7 @@
 		{
 
 			$usuario=new Conexion();
-			$query="INSERT INTO `libros`(`Nombre`,`Materia`,`Grado`, `Autor`,`Editorial`,`Precio`, `Cantidad`) VALUES ('$nombre, $materia, $grado, $autor, $editorial, $precio, $cantidad');";
+			$query="INSERT INTO `libros`(`Nombre`,`Materia`,`Grado`, `Autor`,`Editorial`,`Precio`, `Cantidad`) VALUES ('$nombre', '$materia', '$grado', '$autor', '$editorial', '$precio', '$cantidad');";
 
 			$consulta=$usuario->query($query);
 			$usuario->close();

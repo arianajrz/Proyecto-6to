@@ -26,12 +26,8 @@
 			}
 			$smarty->assign('men',$men);
 			$smarty->assign('e','null');
-<<<<<<< HEAD
-			$smarty->assign('vista',$_SESSION['AgregarLibro']);
-=======
 			$smarty->assign('vista',$_SESSION['vista']);
->>>>>>> c0151f00dfb83ce3c1caea9e1e339177fab9eace
-			$smarty->assign('usuario',$_SESSION['u']);
+			$smarty->assign('usuario',$_SESSION['user']);
 			$smarty->display('Master.tpl'); 
 		}
 		

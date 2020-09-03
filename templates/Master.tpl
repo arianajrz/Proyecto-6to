@@ -23,7 +23,7 @@
 					{include file='InventarioLibros.tpl'}
 
 					{else if $vista == "RetirarLibro"}
-					{include file='QuitarL'}
+					{include file='QuitarL.tpl'}
 
 					{else if $vista == "VerUniformes"}
                     {include file='InventarioU.tpl'}

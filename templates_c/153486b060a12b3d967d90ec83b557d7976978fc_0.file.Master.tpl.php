@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-09-03 03:16:32
+/* Smarty version 3.1.34-dev-7, created on 2020-09-03 15:50:37
   from 'C:\xampp\htdocs\bim4\Proyecto-6to\templates\Master.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f5043f0d0c203_87999029',
+  'unifunc' => 'content_5f50f4ad6496d8_51158725',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '153486b060a12b3d967d90ec83b557d7976978fc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\bim4\\Proyecto-6to\\templates\\Master.tpl',
-      1 => 1599095790,
+      1 => 1599140989,
       2 => 'file',
     ),
   ),
@@ -24,14 +24,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:VerUs.tpl' => 1,
     'file:AgregarL.tpl' => 1,
     'file:InventarioLibros.tpl' => 1,
-    'file:QuitarL' => 1,
+    'file:QuitarL.tpl' => 1,
     'file:InventarioU.tpl' => 1,
     'file:AgregarU.tpl' => 1,
     'file:QuitarU.tpl' => 1,
     'file:Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f5043f0d0c203_87999029 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f50f4ad6496d8_51158725 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:Cabeceras/Header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('titulo'=>'Home'), 0, false);
 ?>
     <?php if (isset($_smarty_tpl->tpl_vars['e']->value)) {?>
@@ -64,7 +64,7 @@ $_smarty_tpl->_subTemplateRender('file:Cabeceras/Header.tpl', $_smarty_tpl->cach
 ?>
 
 					<?php } elseif ($_smarty_tpl->tpl_vars['vista']->value == "RetirarLibro") {?>
-					<?php $_smarty_tpl->_subTemplateRender('file:QuitarL', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+					<?php $_smarty_tpl->_subTemplateRender('file:QuitarL.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
 					<?php } elseif ($_smarty_tpl->tpl_vars['vista']->value == "VerUniformes") {?>

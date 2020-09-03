@@ -32,8 +32,8 @@
 		}
 		
 	   	public function QuitarLibros()
-	    	{
-            		$ql=new Inventario();
+	    {
+            $ql=new Inventario();
 			$smarty=new Smarty();
 			session_start();
 			
@@ -89,11 +89,11 @@
 			$smarty->assign('usuario',$_SESSION['user']);
 			$smarty->display('Master.tpl');
 		}
-		}
+		
 		
 	   	public function QuitarUniformes()
 	    {
-			$qu=new Inventario(); 
+			$ql=new Inventario(); 
             $smarty=new Smarty(); 
             session_start(); 
  
@@ -102,7 +102,7 @@
             $precio=$_POST['precio']; 
             $cant=$_POST['cantidad'];
             
-            $resultado=$qu->Retiraruniforme($prenda,$talla,$precio,$cantidad); 
+            $resultado=$ql->RetirarUniforme($prenda,$talla,$precio,$cantidad); 
             if ($resultado) 
             { 
                 $men= "La prenda ".$nombre." se ha Retirado"; 

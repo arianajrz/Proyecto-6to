@@ -60,7 +60,7 @@
 			$smarty->assign('usuario',$_SESSION['u']);
 			$smarty->display('Master.tpl'); 
 		}
-		public function GuardarUniformes()
+		public function GuardarUniforme()
 		{
 			$guardar = new Inventario();
 			$smarty=new Smarty();
@@ -77,27 +77,45 @@
 
 			if($transaccion)
 			{
-				$men= "producto ".$nombre." agregado";
-			}
-			else 
-			{
-				$men= "producto ".$nombre." no agregado";
-			}
-			
-			$smarty->assign('men',$men);
+				$men= "La prenda ".$prenda." se ha guardado"; 
+            } 
+            else 
+            { 
+            $men= "La prenda ".$prenda." no se ha logrado guardar"; 
+            } 
+            $smarty->assign('men',$men);
 			$smarty->assign('e','null');
 			$smarty->assign('vista','vista');
 			$smarty->assign('usuario',$_SESSION['user']);
 			$smarty->display('Master.tpl');
 		}
+		}
 		
 	   	public function QuitarUniformes()
-	    	{
-			/*$smarty->assign('men',$men);
+	    {
+			$qu=new Inventario(); 
+            $smarty=new Smarty(); 
+            session_start(); 
+ 
+            $materia=$_POST['prenda']; 
+            $grado=$_POST['talla']; 
+            $precio=$_POST['precio']; 
+            $cant=$_POST['cantidad'];
+            
+            $resultado=$qu->Retiraruniforme($prenda,$talla,$precio,$cantidad); 
+            if ($resultado) 
+            { 
+                $men= "La prenda ".$nombre." se ha Retirado"; 
+            } 
+            else 
+            { 
+                $men= "La prenda ".$nombre." no se ha logrado retirar"; 
+            }   
+			$smarty->assign('men',$men);
 			$smarty->assign('e','null');
 			$smarty->assign('vista',$_SESSION['vista']);
 			$smarty->assign('usuario',$_SESSION['u']);
-			$smarty->display('Master.tpl');*/ 
+			$smarty->display('Master.tpl');
 		}
 	}
 ?>

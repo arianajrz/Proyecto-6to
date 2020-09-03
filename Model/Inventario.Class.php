@@ -52,7 +52,7 @@
 
 	    }
 
-	    public function AgregarUniformes($prenda, $talla, $precio, $cantidad)
+	    public function AgregarUniforme($prenda, $talla, $precio, $cantidad)
 	    {
 
 		$usuario = new Conexion();

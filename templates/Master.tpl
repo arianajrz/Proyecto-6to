@@ -20,7 +20,7 @@
 					{include file='AgregarL.tpl'}
 
 					{else if $vista == "VerLibros"}
-					{include file='InventarioL'}
+					{include file='InventarioLibros.tpl'}
 
 					{else if $vista == "RetirarLibro"}
 					{include file='QuitarL'}

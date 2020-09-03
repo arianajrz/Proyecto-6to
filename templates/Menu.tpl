@@ -4,7 +4,7 @@
 
 		 <a href="?controller=Menu&action=CargarOpcion&opcion=VerUsuarios" class="collection-item black-text"><b>Ver Usuarios</b></a>
 
-		 <a href="" class="collection-item black-text"><b> Inventario de Libros </b></a>
+		 <a href="?controller=Menu&action=CargarOpcion&opcion=VerLibros"class="collection-item black-text"><b> Inventario de Libros </b></a>
 
 		 <a href="?controller=Menu&action=CargarOpcion&opcion=VerUniformes" class="collection-item black-text"><b>Ver Uniformes</b></a>
 

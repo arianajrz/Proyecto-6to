@@ -18,12 +18,12 @@
     </div>
   </div>
 
-  <form class ="col s11 center-align" method="post" action="?controller=User&action=VerUniformes">
+  <form class ="col s11 center-align" method="post" action="?controller=User&action=VerLibros">
 
     <table class="responsive-table">
             <thead>
               <tr>
-                  <th><font color="Black"><b>Nombre Libro</b></font></th>
+                  <th><font color="Black"><b>Nombre</b></font></th>
                   <th><font color="Black"><b>Materia</b></font></th>
                   <th><font color="Black"><b>Grado</b></font></th>
                   <th><font color="Black"><b>Autor</b></font></th>

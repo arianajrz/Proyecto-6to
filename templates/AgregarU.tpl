@@ -14,7 +14,7 @@
 	  </div>
 	</div>
 
-	<form class = "col s12 center-align" method="post" action="?controller=Inventario&action=AgregarUniformes">
+	<form class = "col s12 center-align" method="post" action="?controller=User&action=AgregarUniformes">
 		<div class = "row">
 			<div class = "input-field col s10">
 				<input placeholder = "Prenda" name="prenda"  id = "nombre" type = "text" class = "active validate" required />

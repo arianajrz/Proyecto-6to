@@ -26,7 +26,7 @@
 			{
 				$inv=new Inventario();
 				$lib=new Librerias(); 
-				$invent=$inv->VerUnifomes();
+				$invent=$inv->VerUniformes();
 				$dato=$lib->DatosSmarty($invent);
 				$smarty->assign('dato',$dato);
 			}

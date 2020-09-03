@@ -2,7 +2,7 @@
 	Class Inventario
 	{
 		// Modelo de libros
-		public function AgregarLibro ($nombre, $materia, $grado, $autor, $editorial, $precio, $cantidad)
+		public function AgregarLibro($nombre, $materia, $grado, $autor, $editorial, $precio, $cantidad)
 		{
 
 			$usuario=new Conexion();

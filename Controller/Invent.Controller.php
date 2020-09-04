@@ -97,24 +97,24 @@
             $smarty=new Smarty(); 
             session_start(); 
  
-            $materia=$_POST['prenda']; 
-            $grado=$_POST['talla']; 
+            $prenda=$_POST['prenda']; 
+            $talla=$_POST['talla']; 
             $precio=$_POST['precio']; 
-            $cant=$_POST['cantidad'];
+            $cantidad=$_POST['cantidad'];
             
-            $resultado=$ql->RetirarUniforme($prenda,$talla,$precio,$cantidad); 
+            $resultado=$ql->RetirarUniforme($prenda, $talla, $precio, $cantidad);
             if ($resultado) 
             { 
-                $men= "La prenda ".$nombre." se ha Retirado"; 
+                $men= "La prenda ".$prenda." se ha retirado"; 
             } 
             else 
             { 
-                $men= "La prenda ".$nombre." no se ha logrado retirar"; 
+                $men= "La prenda ".$prenda." no se ha logrado retirar"; 
             }   
 			$smarty->assign('men',$men);
 			$smarty->assign('e','null');
 			$smarty->assign('vista',$_SESSION['vista']);
-			$smarty->assign('usuario',$_SESSION['u']);
+			$smarty->assign('usuario',$_SESSION['user']);
 			$smarty->display('Master.tpl');
 		}
 	}

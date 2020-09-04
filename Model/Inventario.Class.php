@@ -24,7 +24,7 @@
 	    public function RetirarLibro($nombre, $materia, $grado, $autor, $editorial, $precio, $cantidad)
 	    {
 	      $usuario=new Conexion();
-	      $query="DELETE FROM `libros` WHERE 'Nombre'='$nombre' AND 'Materia'='$materia' AND 'Grado'='$grado' AND 'Autor'='$autor' AND 'Editorial'='$editorial' AND 'Precio'='$precio' AND 'Cantidad'='$cantidad');";
+	      $query="DELETE FROM `libros` WHERE 'Nombre'='$nombre' AND 'Materia'='$materia' AND 'Grado'='$grado' AND 'Autor'='$autor' AND 'Editorial'='$editorial' AND 'Precio'='$precio' AND 'Cantidad'='$cantidad';";
 
 	      $consulta=$usuario->query($query);
 	      $usuario->close();

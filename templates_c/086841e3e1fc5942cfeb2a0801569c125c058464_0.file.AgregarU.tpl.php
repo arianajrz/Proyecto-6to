@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-09-03 15:39:27
+/* Smarty version 3.1.34-dev-7, created on 2020-09-03 16:07:02
   from 'C:\xampp\htdocs\bim4\Proyecto-6to\templates\AgregarU.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f50f20f3d57c6_99800824',
+  'unifunc' => 'content_5f50f886246519_71869152',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '086841e3e1fc5942cfeb2a0801569c125c058464' => 
     array (
       0 => 'C:\\xampp\\htdocs\\bim4\\Proyecto-6to\\templates\\AgregarU.tpl',
-      1 => 1599140362,
+      1 => 1599140534,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f50f20f3d57c6_99800824 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f50f886246519_71869152 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
 >
     $(document).ready(function() {

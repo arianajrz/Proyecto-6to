@@ -65,7 +65,7 @@
 	    public function RetirarUniforme($prenda, $talla, $precio, $cantidad)
 	    {
 		$usuario=new Conexion();
-		$query="DELETE FROM `uniformes` WHERE `Prenda`='$prenda' AND `Talla`='$talla' AND `Precio`='$precio' AND `Cantidad`='$cantidad');";
+		$query="DELETE FROM `uniformes` WHERE `Prenda`='$prenda' AND `Talla`='$talla' AND `Precio`='$precio' AND `Cantidad` = '$cantidad';";
 
 		$consulta=$usuario->query($query);
 		$usuario->close();

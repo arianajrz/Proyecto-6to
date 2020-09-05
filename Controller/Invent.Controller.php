@@ -40,12 +40,12 @@
 			$nombre=$_POST['nombre'];
 			$materia=$_POST['materia'];
 			$grado=$_POST['grado'];
-      			$autor=$_POST['autor'];
+      		$autor=$_POST['autor'];
 			$editorial=$_POST['editorial'];
 			$precio=$_POST['precio'];
-      			$cant=$_POST['cant'];
+      		$cantidad=$_POST['cantidad'];
 
-			$resultado=$ql->RetirarLibro($nombre,$materia,$grado,$autor,$editorial,$precio,$cant);
+			$resultado=$ql->RetirarLibro($nombre,$materia,$grado,$autor,$editorial,$precio,$cantidad);
 			if ($resultado)
 			{
 				$men= "El libro ".$nombre." se ha Retirado";
@@ -57,7 +57,7 @@
 			$smarty->assign('men',$men);
 			$smarty->assign('e','null');
 			$smarty->assign('vista',$_SESSION['vista']);
-			$smarty->assign('usuario',$_SESSION['u']);
+			$smarty->assign('usuario',$_SESSION['user']);
 			$smarty->display('Master.tpl'); 
 		}
 		public function GuardarUniforme()

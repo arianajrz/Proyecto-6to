@@ -12,7 +12,7 @@
 
 		 <a href="?controller=Menu&action=CargarOpcion&opcion=AgregarUniformes" class="collection-item black-text"><b> Agregar Uniformes</b></a>
 
-		 <a href="#!" class="collection-item black-text"><b>Quitar Libro </b></a>
+		 <a href="?controller=Menu&action=CargarOpcion&opcion=RetirarLibro" class="collection-item black-text"><b>Quitar Libro </b></a>
 
 		 <a href="?controller=Menu&action=CargarOpcion&opcion=RetirarUniforme" class="collection-item black-text"><b>Quitar Uniforme</b></a>
   </div>

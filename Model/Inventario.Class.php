@@ -88,6 +88,15 @@
 		$usuario->close();
 		return $consulta;
 
+	    }	
+	    public function Producto($nit)
+	    {
+		$usuario=new Conexion();
+		$query="SELECT * FROM `Factura` WHERE `NIT`='$nit';";
+		$consulta=$usuario->query($query);
+		$usuario->close();
+		return $consulta;
+
 	    }			
 		
 	}

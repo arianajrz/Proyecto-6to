@@ -71,6 +71,25 @@
 		$usuario->close();
 		return $consulta;
 	    }
+	    public function IDinventarioUniformes($id, $prenda)
+	    {
+		$usuario=new Conexion();
+		$query="SELECT * FROM `uniformes` WHERE `ID`='$id' AND `Prenda`='$prenda';";
+		$consulta=$usuario->query($query);
+		$usuario->close();
+		return $consulta;
+
+	    }	
+	    public function IDinventarioLibros($id, $nombre)
+	    {
+		$usuario=new Conexion();
+		$query="SELECT * FROM `uniformes` WHERE `ID`='$id' AND `Nombre`='$nombre';";
+		$consulta=$usuario->query($query);
+		$usuario->close();
+		return $consulta;
+
+	    }			
+		
 	}
 
 ?>
